@@ -5,7 +5,7 @@ body {
 }
 
 div.container {
-    width: 450px;
+    width: 530px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -45,7 +45,6 @@ img {
 
 .purchase_checkbox {
     display: flex;
-    max-width: 450px;
     margin: 40px 0 20px;
     align-items: center;
 }
@@ -80,16 +79,18 @@ img {
 }
 
 .purchase_box-describe__info {
-    max-width: 310px;
-    margin-left: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 0 10px;
 }
 
 .describe_title {
     display: flex;
-    align-items: center;
+    align-items: start;
+}
+.describe_title img{
+    margin-top: 6px;
 }
 
 .purchase_box-describe__info h3 {
@@ -101,7 +102,7 @@ img {
     font-weight: 700;
 }
 
-ul.describe_details {
+.describe_details {
     display: flex;
     justify-content: space-between;
 }
@@ -131,14 +132,28 @@ ul.describe_details {
 
 .describe_details-block-minus {
     border: 1px solid grey;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.describe_details-block-minus img{
+    width: 15px;
+    height: 15px;
 }
 
 .describe_details-block-plus {
     border: 1px solid black;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.describe_details-block-plus img{
+    width: 15px;
+    height: 15px;
 }
 
 .purchase_price {
@@ -186,4 +201,8 @@ ul.describe_details {
 }
 .line-dashed{
     border: lightgrey 1px dashed;
+}
+.basket{
+    width: 30px;
+    height: 30px;
 }
