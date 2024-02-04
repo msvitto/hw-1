@@ -32,7 +32,7 @@ img {
 }
 
 .purchase_option-item {
-    margin: 30px 0;
+    margin: 40px 0 35px;
     font-weight: 700;
 }
 
@@ -40,13 +40,17 @@ img {
 }
 
 .purchase_option-list li {
-    margin-bottom: 30px;
+    margin: 30px 0 10px;
 }
 
 .purchase_checkbox {
     display: flex;
     max-width: 450px;
-    margin-bottom: 20px;
+    margin: 40px 0 20px;
+    align-items: center;
+}
+.purchase_checkbox p{
+    cursor: pointer;
 }
 
 .purchase_checkbox input {
@@ -56,7 +60,7 @@ img {
     margin-right: 10px;
 }
 
-.purchase_box {
+.purchase_box{
 }
 
 .purchase_box h2 {
@@ -173,4 +177,13 @@ ul.describe_details {
 
 .cursor-point {
     cursor: pointer;
+}
+.active{
+    background-color: black;
+}
+.line{
+    border: lightgrey 1px solid;
+}
+.line-dashed{
+    border: lightgrey 1px dashed;
 }
