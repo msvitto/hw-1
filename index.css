@@ -206,3 +206,9 @@ img {
     width: 30px;
     height: 30px;
 }
+.click-agreement{
+    background-color: black;
+}
+.click-disagreement{
+    background-color: white;
+}

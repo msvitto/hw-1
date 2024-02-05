@@ -7,11 +7,22 @@ checkBoxes.forEach(checkBox=>{
         console.log(this);
     })
 });
-const checkBoxesText = document.querySelectorAll('.cursor-point-text');
+// const checkBoxesText = document.querySelectorAll('.cursor-point-text');
 
-checkBoxesText.forEach(function(checkBoxText) {
-    checkBoxText.addEventListener('click', function() {
-        const checkBox = this.previousElementSibling; // Get the previous sibling, which is the checkbox
-        checkBox.style.backgroundColor = 'black';
-    });
+// checkBoxesText.forEach(function(checkBoxText) {
+//     checkBoxText.addEventListener('click', function() {
+//         const checkBox = this.previousElementSibling;
+//         checkBox.style.backgroundColor = 'black';
+//     });
+// });
+
+let a = $("p.cursor-point-text");
+let b = $("input.cursor-point");
+
+a.click(function (){
+    b.addClass("click-agreement");
 });
+a.click(function (){
+    b.toggleClass("click-disagreement");
+});
+
